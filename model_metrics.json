@@ -1,0 +1,186 @@
+{
+  "dataset": "Tuesday-WorkingHours.pcap_ISCX.csv",
+  "source_rows": 52104,
+  "sampled_rows": 52104,
+  "features": 65,
+  "classes": [
+    "BENIGN",
+    "Bot",
+    "DDoS",
+    "DoS Hulk",
+    "FTP-Patator",
+    "PortScan",
+    "SSH-Patator",
+    "Web Attack"
+  ],
+  "class_counts_before_sampling": {
+    "BENIGN": 15747,
+    "FTP-Patator": 7856,
+    "SSH-Patator": 7777,
+    "DoS Hulk": 6291,
+    "PortScan": 6259,
+    "DDoS": 4019,
+    "Bot": 2109,
+    "Web Attack": 2046
+  },
+  "accuracy": 0.9928029939545149,
+  "precision_weighted": 0.9928057359975352,
+  "recall_weighted": 0.9928029939545149,
+  "f1_weighted": 0.99279567909072,
+  "classification_report": {
+    "BENIGN": {
+      "precision": 0.9901960784313726,
+      "recall": 0.993968253968254,
+      "f1-score": 0.9920785804816223,
+      "support": 3150.0
+    },
+    "Bot": {
+      "precision": 0.9952038369304557,
+      "recall": 0.9834123222748815,
+      "f1-score": 0.9892729439809297,
+      "support": 422.0
+    },
+    "DDoS": {
+      "precision": 0.9776119402985075,
+      "recall": 0.9776119402985075,
+      "f1-score": 0.9776119402985075,
+      "support": 804.0
+    },
+    "DoS Hulk": {
+      "precision": 0.9849445324881141,
+      "recall": 0.9880763116057234,
+      "f1-score": 0.9865079365079366,
+      "support": 1258.0
+    },
+    "FTP-Patator": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1571.0
+    },
+    "PortScan": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1252.0
+    },
+    "SSH-Patator": {
+      "precision": 1.0,
+      "recall": 0.9993569131832798,
+      "f1-score": 0.9996783531682213,
+      "support": 1555.0
+    },
+    "Web Attack": {
+      "precision": 0.9874686716791979,
+      "recall": 0.9633251833740831,
+      "f1-score": 0.9752475247524752,
+      "support": 409.0
+    },
+    "accuracy": 0.9928029939545149,
+    "macro avg": {
+      "precision": 0.9919281324784559,
+      "recall": 0.9882188655880912,
+      "f1-score": 0.9900496598987116,
+      "support": 10421.0
+    },
+    "weighted avg": {
+      "precision": 0.9928057359975352,
+      "recall": 0.9928029939545149,
+      "f1-score": 0.99279567909072,
+      "support": 10421.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      3131,
+      2,
+      7,
+      5,
+      0,
+      0,
+      0,
+      5
+    ],
+    [
+      6,
+      415,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      786,
+      12,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      11,
+      1243,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1571,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1252,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1554,
+      0
+    ],
+    [
+      14,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      394
+    ]
+  ],
+  "class_labels_for_confusion_matrix": [
+    "BENIGN",
+    "Bot",
+    "DDoS",
+    "DoS Hulk",
+    "FTP-Patator",
+    "PortScan",
+    "SSH-Patator",
+    "Web Attack"
+  ],
+  "sampling_note": "Maximum 30000 records per class; stratified 80/20 test split."
+}
