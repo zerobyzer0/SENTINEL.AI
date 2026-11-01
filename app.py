@@ -1,4 +1,5 @@
 from pathlib import Path
+import tempfile
 import json
 import joblib
 import numpy as np
@@ -8,7 +9,7 @@ from flask import Flask, render_template, request, jsonify, send_file, flash, re
 ROOT = Path(__file__).resolve().parent
 MODEL_PATH = ROOT / "ids_real_model.joblib"
 METRICS_PATH = ROOT / "model_metrics.json"
-RESULTS_PATH = ROOT / "last_scan_results.csv"
+RESULTS_PATH = Path(tempfile.gettempdir()) / "last_scan_results.csv"
 app = Flask(__name__)
 app.secret_key = "sentinelai-local-development-key"
 app.config["MAX_CONTENT_LENGTH"] = 1000 * 1024 * 1024
